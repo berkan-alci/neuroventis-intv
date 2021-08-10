@@ -28,10 +28,14 @@ Where REACT_APP_SERVER_URL contains the URL of the server application.
 
 ## Solving the challenges
 
+Clone this project into your personal git repository (gitlab or github).
+
 Please proceeed by reviewing the [issues list](https://gitlab.com/raymundo.vasquezruiz.epione/full-stack-test/-/issues) and tackle the issues starting by #1.
 
-Feel free to change or add anything in the project structure.
+The issues are increasing in complexity and you **do not need to solve them all** to be considered for an interview. We want to see how you tackle the challenges and at which level you're currently standing. At Neuroventis we believe in continuous improvement and we know that today is just a start 🙃. We'll be reviewing the solutions, the code styling, the modularization and the tests.
 
-We'll be reviewing the solutions, the code styling, the modularization and the tests.
+Timebox this test to a maximum of 4 hours. When this time completes please send us the link to your repository via e-mail.
+
+Feel free to change or add anything in the project structure.
 
 Show us how can you bring a small idea closer to production 🚀
