@@ -1,6 +1,6 @@
 # Neurox-v
 
-👋 This is the assessment for full stack software developer within [Neuroventis](https://neuroventis.care/).
+👋 This is the assessment for full stack software engineer within [Neuroventis](https://neuroventis.care/).
 
 One small application has been started containing a server part and a client part.
 
