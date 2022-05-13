@@ -22,7 +22,6 @@ const Home = () => {
             data.push(adjusted)
 
         })
-        console.log(data)
         setPatientReports(data);
 
     }, [reportsList])

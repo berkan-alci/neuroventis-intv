@@ -1,4 +1,4 @@
-import map from './db' assert { type: "json" };
+import map from './db.json'
 
 const controller = {
     getReports: (ctx) => {
@@ -19,11 +19,12 @@ const controller = {
         }
 
         const patient = map.filter((obj) => obj._id === id);
-        console.log(patient);
-
-
+        let data;
+        patient.map((p) => {
+            data = p;
+        })
         ctx.status = 200;
-        ctx.body = { data: patient }
+        ctx.body = { data }
 
 
     },
