@@ -15,10 +15,14 @@ export const reportsApi = createApi({
         getDetails: builder.query({
             query: (id) => createRequest(`/${id}`)
         }),
+        postReport: builder.query({
+            query: (id) => createRequest(`/${id}`)
+        }),
     })
 });
 
 export const {
     useGetReportsQuery,
-    useGetDetailsQuery
+    useGetDetailsQuery,
+    usePostReportQuery,
 } = reportsApi

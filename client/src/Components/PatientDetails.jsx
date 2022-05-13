@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import PatientInput from './PatientInput'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useGetDetailsQuery } from '../services/reportsApi';
-import { Container, Table } from 'react-bootstrap';
+import { Container, Form, Table } from 'react-bootstrap';
 
 const PatientDetails = () => {
     const { id } = useParams();
@@ -64,6 +64,7 @@ const PatientDetails = () => {
                         }
                     </tbody>
                 </Table>
+
             </Container>
         </div>
         // <PatientInput/>

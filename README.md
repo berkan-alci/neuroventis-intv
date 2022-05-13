@@ -62,10 +62,9 @@ Show us how can you bring a small idea closer to production 🚀
 
 -   [x] [[bug] Patients reports table not displaying](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/1)[x]
 -   [x] [[feature] As a user I want to access the patient details so that I can work with them](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/2)
--   [ ] [[feature] As a user I want to be able to add new patient reports](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/3)
+-   [-] [[feature] As a user I want to be able to add new patient reports](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/3)
 -   [ ] [[feature] As a user I want to generate a patient report in NE-1 format to exchange with hospitals](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/4)
--   [ ] [[Extra] Adding a workflow on github for testing with pull requests]
--   [ ] [[Extra] Adding a branch where you can run this on localhost without any configuration whatsoever]
+-   [x] [[Extra] Adding a branch where you can run this on localhost without any configuration whatsoever]
 
 ### Pre-requisites to running with kubernetes:
 
@@ -75,9 +74,11 @@ Show us how can you bring a small idea closer to production 🚀
 
 ### Installation & Setup guide(w/k8s - local):
 
--   pull repo: `git pull`
+-   pull repo: `git pull https://github.com/berkan-alci/neuroventis-intv.git`
 -   Install ingress NGINX controller https://kubernetes.github.io/ingress-nginx/deploy/ (mac&windows compatible only)
 -   Go to hosts file, add `127.0.0.1 nv-interview.com`
 -   Go to root of dir `skaffold dev`
 
 ### Installation & Setup guide(without skaffold):
+
+-   pull repo: `git pull origin local`
