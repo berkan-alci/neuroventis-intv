@@ -2,7 +2,7 @@ import Koa from 'koa';
 import cors from '@koa/cors';
 import KoaRouter from 'koa-router';
 const app = new Koa();
-import routes from './modules/reports/routes.js';
+import routes from './modules/reports/routes';
 
 //middleware
 app.use(cors());

@@ -1,4 +1,4 @@
-import map from './db.json';
+import map from './db' assert { type: "json" };
 
 const controller = {
     getReports: (ctx) => {

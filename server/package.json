@@ -5,7 +5,7 @@
     "description": "This is a server application",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon --experimental-json-modules index.js",
+        "dev": "nodemon --experimental-json-modules --es-module-specifier-resolution=node index.js",
         "test:ci": "jest",
         "test:dev": "jest --watchAll --no-cache"
     },
