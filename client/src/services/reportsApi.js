@@ -13,7 +13,7 @@ export const reportsApi = createApi({
             query: () => createRequest(`/`)
         }),
         getDetails: builder.query({
-            query: (name) => createRequest(`/${name}`)
+            query: (id) => createRequest(`/${id}`)
         }),
     })
 });

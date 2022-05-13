@@ -12,6 +12,7 @@ const Home = () => {
 
             // only get necessaryy data
             const adjusted = {
+                "id": objects._id,
                 "name": objects.name,
                 "email": objects.email,
                 "registered": objects.registered,
@@ -19,7 +20,9 @@ const Home = () => {
                 "reports": objects.reports.length
             }
             data.push(adjusted)
+
         })
+        console.log(data)
         setPatientReports(data);
 
     }, [reportsList])
@@ -41,14 +44,16 @@ const Home = () => {
                     <tbody>
                         {
                             patientReports.map((pReport, i) => pReport &&
+
                                 <tr key={i}>
                                     <td key={pReport.name}>
-                                        <Link to={pReport.name}>{pReport.name}</Link>
+                                        <Link to={pReport.id}>{pReport.name}</Link>
                                     </td>
                                     <td key={pReport.registered}>{pReport.registered}</td>
                                     <td key={pReport.email}>{pReport.email}</td>
                                     <td key={pReport.gender}>{pReport.gender}</td>
                                     <td key={pReport.reports}>{pReport.reports}</td>
+
                                 </tr>
 
                             )

@@ -4,10 +4,10 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 const PatientDetails = () => {
 
-    const { name } = useParams();
+    const { id } = useParams();
     return (
         <div>
-            {name}
+            {id}
         </div>
         // <PatientInput/>
     )
