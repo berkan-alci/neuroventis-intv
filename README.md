@@ -44,7 +44,7 @@ Show us how can you bring a small idea closer to production 🚀
 
 ### Pre-start changes & remarks:
 
--   All of the items below were done 35 minutes prior to starting with the assignment (so at 15h55)
+-   All of the items below were done 40 minutes prior to starting with the assignment (so at 15h55)
 -   Re-configured commonjs to es6 (server)
 -   Package.json was changed to work with jest & setup file (server)
 -   Continuous Development setup using skaffold & k8s
@@ -54,9 +54,9 @@ Show us how can you bring a small idea closer to production 🚀
 ### Time restrictions:
 
 -   Timebox: 4h
--   Start time: 16h30 GMT+1:00 (email with repo sent at this point)
--   Due time: 20h30 GMT+1:00
--   Due time if work beforehand is counted in: 19h55 GMT+1:00
+-   Start time: 16h35 GMT+1:00 (email with repo sent at this point)
+-   Due time: 20h35 GMT+1:00
+-   Due time if work beforehand is counted in: 19h50 GMT+1:00
 
 ### Issues/Completed:
 
