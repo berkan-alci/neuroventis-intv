@@ -1,20 +1,31 @@
 {
-  "name": "neuro-x-server",
-  "version": "0.0.1",
-  "description": "This is a server application",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@koa/cors": "^3.1.0",
-    "koa": "^2.13.1",
-    "koa-router": "^10.0.0"
-  },
-  "devDependencies": {
-    "jest": "^27.0.6"
-  }
+    "name": "neuro-x-server",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "This is a server application",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --experimental-json-modules index.js",
+        "test:ci": "jest",
+        "test:dev": "jest --watchAll --no-cache"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "setupFilesAfterEnv": [
+            "./test/setup.js"
+        ]
+    },
+    "keywords": [],
+    "author": "Berkan Alci",
+    "license": "ISC",
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "koa": "^2.13.1",
+        "koa-router": "^10.0.0"
+    },
+    "devDependencies": {
+        "jest": "^27.0.6",
+        "nodemon": "^2.0.16",
+        "supertest": "^6.2.3"
+    }
 }

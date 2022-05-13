@@ -1,14 +1,14 @@
-const koaRouter = require('koa-router');
-const db = require('./db.json');
+import map from './db.json';
 
-const router = new koaRouter({
-    prefix: '/report'
-});
+const controller = {
+    getReports: (ctx) => {
+        const userReports = map(({ name, email, gender, registered, reports }) => { name, email, gender, registered, reports });
+        ctx.status = 200;
+        ctx.body = userReports;
+    }
 
-router.get('/', ctx => {
-    const userReports = db.map(({ name, email, gender, registered, reports }) => { name, email, gender, registered, reports });
-    ctx.status = 200;
-    ctx.body = userReports;
-});
+}
 
-module.exports = router;
+export default function (router) {
+    router.get('/', controller.getReports);
+}

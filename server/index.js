@@ -1,10 +1,12 @@
-const Koa = require('koa');
-const cors = require('@koa/cors');
-const app = new Koa();
-const reportRouter = require('./modules/reports/routes');
-app.use(cors());
-app.use(reportRouter.routes());
+import { app } from '../server/app.js'
 
-app.listen(5000, () => {
-    console.log("Listening on 5000. Up and ready!");
-});
+const start = async () => {
+    console.log('Starting up server...')
+
+    app.listen(5000, () => {
+        console.log("Listening on 5000. Up and ready!");
+    });
+};
+
+start();
+
