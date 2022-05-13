@@ -60,7 +60,7 @@ Show us how can you bring a small idea closer to production 🚀
 
 ### Issues/Completed:
 
--   [ ] [[bug] Patients reports table not displaying](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/1)[x]
+-   [x] [[bug] Patients reports table not displaying](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/1)[x]
 -   [ ] [[feature] As a user I want to access the patient details so that I can work with them](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/2)
 -   [ ] [[feature] As a user I want to be able to add new patient reports](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/3)
 -   [ ] [[feature] As a user I want to generate a patient report in NE-1 format to exchange with hospitals](https://gitlab.com/raymundo.vasquezruiz.neuroventis/full-stack-test/-/issues/4)

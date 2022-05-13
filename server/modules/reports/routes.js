@@ -2,9 +2,13 @@ import map from './db' assert { type: "json" };
 
 const controller = {
     getReports: (ctx) => {
-        const userReports = map(({ name, email, gender, registered, reports }) => { name, email, gender, registered, reports });
+
+        if (!map || map === null) {
+            throw new Error('no data provided');
+        }
+
         ctx.status = 200;
-        ctx.body = userReports;
+        ctx.body = { map };
     }
 
 }

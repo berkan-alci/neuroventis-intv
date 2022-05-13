@@ -10,10 +10,24 @@ function App() {
 
 
     useEffect(() => {
-        console.log(reportsList?.data)
-        setPatientReports(reportsList?.data)
-    }, [])
+        let data = []
+        reportsList?.map?.map((objects) => {
 
+            // only get necessaryy data
+            const adjusted = {
+                "name": objects.name,
+                "email": objects.email,
+                "registered": objects.registered,
+                "gender": objects.gender,
+                "reports": objects.reports.length
+            }
+            data.push(adjusted)
+        })
+        setPatientReports(data);
+
+    }, [reportsList])
+
+    console.log(patientReports)
     return (
         <div className="App">
             <Container>
@@ -30,14 +44,16 @@ function App() {
                     </thead>
                     <tbody>
                         {
-                            patientReports.map(pReport => pReport &&
-                                <tr>
-                                    <td>{pReport.name}</td>
-                                    <td>{pReport.registered}</td>
-                                    <td>{pReport.email}</td>
-                                    <td>{pReport.gender}</td>
-                                    <td>{pReport.reports.length}</td>
-                                </tr>)
+                            patientReports.map((pReport, i) => pReport &&
+                                <tr key={i}>
+                                    <td key={pReport.name}>{pReport.name}</td>
+                                    <td key={pReport.registered}>{pReport.registered}</td>
+                                    <td key={pReport.email}>{pReport.email}</td>
+                                    <td key={pReport.gender}>{pReport.gender}</td>
+                                    <td key={pReport.reports}>{pReport.reports}</td>
+                                </tr>
+
+                            )
                         }
                     </tbody>
                 </Table>

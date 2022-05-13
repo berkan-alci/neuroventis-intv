@@ -10,7 +10,7 @@ export const reportsApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl }),
     endpoints: (builder) => ({
         getReports: builder.query({
-            query: (count) => createRequest(`/`)
+            query: () => createRequest(`/`)
         }),
     })
 });
