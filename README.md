@@ -50,6 +50,7 @@ Show us how can you bring a small idea closer to production 🚀
 -   Continuous Development setup using skaffold & k8s
 -   Installing packages & looking around for critical deprecations on the client
 -   Dockerizing server & client
+-   Note: this is the first time I use koa.js, I've only used express & fastify prior to this.
 
 ### Time restrictions:
 
@@ -82,3 +83,5 @@ Show us how can you bring a small idea closer to production 🚀
 ### Installation & Setup guide(without skaffold):
 
 -   pull repo: `git pull origin local`
+-   Go to client root: `npm run start`
+-   Go to server root: `npm run dev`
